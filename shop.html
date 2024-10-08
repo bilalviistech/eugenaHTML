@@ -1,0 +1,1219 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Eugena | Shop</title>
+    <meta charset="UTF-8">
+    <!-- <meta name="keywords" content="HTML, CSS, JavaScript"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/bootstrap.min.css.map" rel="stylesheet" type="text/css">
+    <link rel="icon" href="images/logo.png" type="image/png" sizes="114*114">
+    <link href="css/custom.css" rel="stylesheet" type="text/css">
+    <link href="css/animate.css" rel="stylesheet" type="text/css">
+    <!-- link owl carasoul  -->
+    <link href="css/owl.carousel.min.css" rel="stylesheet" type="text/css">
+    <link href="css/owl.theme.default.min.css" rel="stylesheet" type="text/css">
+    <!-- link slick carasoul  -->
+    <link href="css/slick.css" rel="stylesheet" type="text/css">
+    <link href="css/slick-theme.css" rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet" href="https://code.jquery.com/jquery-3.6.0.min.js">
+
+    <link href="https://site-assets.fontawesome.com/releases/v6.0.0/css/all.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
+    <script src="app.js"></script>
+</head>
+
+<body>
+    <div class="header">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="index.html"><img src="images/logo.png" width="80%" alt="img"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"><i class="fa-solid fa-bars"></i></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">ABOUT US</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="shop.html">SHOP</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="career.html">CAREERS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="artical.html">ARTICLES</a>
+                        </li>
+                    </ul>
+                    <span class="nav_flex ms-auto">
+                        <span class="nav_glass">
+                            <a href="register.html">GET STARTED &nbsp; <i
+                                    class="fa-regular fa-chevron-right fa-fade"></i></a>
+                        </span>
+                    </span>
+
+                </div>
+            </div>
+        </nav>
+    </div>
+
+
+    <style>
+        /*! CSS Used from: https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css */
+        *,
+        ::after,
+        ::before {
+            box-sizing: border-box;
+        }
+
+        h2 {
+            margin-top: 0;
+            margin-bottom: 0.5rem;
+        }
+
+        button {
+            border-radius: 0;
+        }
+
+        button:focus {
+            outline: 1px dotted;
+            outline: 5px auto -webkit-focus-ring-color;
+        }
+
+        button {
+            margin: 0;
+            font-family: inherit;
+            font-size: inherit;
+            line-height: inherit;
+        }
+
+        button {
+            overflow: visible;
+        }
+
+        button {
+            text-transform: none;
+        }
+
+        [type="button"],
+        button {
+            -webkit-appearance: button;
+        }
+
+        [type="button"]::-moz-focus-inner,
+        button::-moz-focus-inner {
+            padding: 0;
+            border-style: none;
+        }
+
+        h2 {
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+            line-height: 1.2;
+        }
+
+        h2 {
+            font-size: 2rem;
+        }
+
+        .container {
+            width: 100%;
+            padding-right: 15px;
+            padding-left: 15px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        @media (min-width: 576px) {
+            .container {
+                max-width: 540px;
+            }
+        }
+
+        @media (min-width: 768px) {
+            .container {
+                max-width: 720px;
+            }
+        }
+
+        @media (min-width: 992px) {
+            .container {
+                max-width: 960px;
+            }
+        }
+
+        @media (min-width: 1200px) {
+            .container {
+                max-width: 1140px;
+            }
+        }
+
+        @media (min-width: 576px) {
+            .container {
+                max-width: 540px;
+            }
+        }
+
+        @media (min-width: 768px) {
+            .container {
+                max-width: 720px;
+            }
+        }
+
+        @media (min-width: 992px) {
+            .container {
+                max-width: 960px;
+            }
+        }
+
+        @media (min-width: 1200px) {
+            .container {
+                max-width: 1140px;
+            }
+        }
+
+        .btn {
+            display: inline-block;
+            font-weight: 400;
+            color: #212529;
+            text-align: center;
+            vertical-align: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            background-color: transparent;
+            border: 1px solid transparent;
+            padding: 0.375rem 0.75rem;
+            font-size: 1rem;
+            line-height: 1.5;
+            border-radius: 0.25rem;
+            transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+                border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            .btn {
+                transition: none;
+            }
+        }
+
+        .btn:hover {
+            color: #212529;
+            text-decoration: none;
+        }
+
+        .btn:focus {
+            outline: 0;
+            box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+        }
+
+        .btn:disabled {
+            opacity: 0.65;
+        }
+
+        .btn-primary {
+            color: #fff;
+            background-color: #007bff;
+            border-color: #007bff;
+        }
+
+        .btn-primary:hover {
+            color: #fff;
+            background-color: #0069d9;
+            border-color: #0062cc;
+        }
+
+        .btn-primary:focus {
+            color: #fff;
+            background-color: #0069d9;
+            border-color: #0062cc;
+            box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);
+        }
+
+        .btn-primary:disabled {
+            color: #fff;
+            background-color: #007bff;
+            border-color: #007bff;
+        }
+
+        .btn-secondary {
+            color: #fff;
+            background-color: #6c757d;
+            border-color: #6c757d;
+        }
+
+        .btn-secondary:hover {
+            color: #fff;
+            background-color: #5a6268;
+            border-color: #545b62;
+        }
+
+        .btn-secondary:focus {
+            color: #fff;
+            background-color: #5a6268;
+            border-color: #545b62;
+            box-shadow: 0 0 0 0.2rem rgba(130, 138, 145, 0.5);
+        }
+
+        .btn-secondary:disabled {
+            color: #fff;
+            background-color: #6c757d;
+            border-color: #6c757d;
+        }
+
+        .btn-info {
+            color: #fff;
+            background-color: #17a2b8;
+            border-color: #17a2b8;
+        }
+
+        .btn-info:hover {
+            color: #fff;
+            background-color: #138496;
+            border-color: #117a8b;
+        }
+
+        .btn-info:focus {
+            color: #fff;
+            background-color: #138496;
+            border-color: #117a8b;
+            box-shadow: 0 0 0 0.2rem rgba(58, 176, 195, 0.5);
+        }
+
+        .btn-info:disabled {
+            color: #fff;
+            background-color: #17a2b8;
+            border-color: #17a2b8;
+        }
+
+        .btn-sm {
+            padding: 0.25rem 0.5rem;
+            font-size: 0.875rem;
+            line-height: 1.5;
+            border-radius: 0.2rem;
+        }
+
+        .btn-group {
+            position: relative;
+            display: -ms-inline-flexbox;
+            display: inline-flex;
+            vertical-align: middle;
+        }
+
+        .btn-group>.btn {
+            position: relative;
+            -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
+        }
+
+        .btn-group>.btn:hover {
+            z-index: 1;
+        }
+
+        .btn-group>.btn:active,
+        .btn-group>.btn:focus {
+            z-index: 1;
+        }
+
+        .btn-group>.btn:not(:first-child) {
+            margin-left: -1px;
+        }
+
+        .btn-group>.btn:not(:last-child):not(.dropdown-toggle) {
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+        }
+
+        .btn-group>.btn:not(:first-child) {
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+        }
+
+        .bg-light {
+            background-color: #f8f9fa !important;
+        }
+
+        .overflow-hidden {
+            overflow: hidden !important;
+        }
+
+        .mb-2 {
+            margin-bottom: 0.5rem !important;
+        }
+
+        .mt-3 {
+            margin-top: 1rem !important;
+        }
+
+        .mb-3 {
+            margin-bottom: 1rem !important;
+        }
+
+        .pt-3 {
+            padding-top: 1rem !important;
+        }
+
+        .pb-3 {
+            padding-bottom: 1rem !important;
+        }
+
+        .text-center {
+            text-align: center !important;
+        }
+
+        @media print {
+
+            *,
+            ::after,
+            ::before {
+                text-shadow: none !important;
+                box-shadow: none !important;
+            }
+
+            h2 {
+                orphans: 3;
+                widows: 3;
+            }
+
+            h2 {
+                page-break-after: avoid;
+            }
+
+            .container {
+                min-width: 992px !important;
+            }
+        }
+
+        /*! CSS Used from: https://nodlik.github.io/StPageFlip/static/style.css */
+        /* .demo-block {
+        border-top: solid 1px #dcdcdc;
+        border-bottom: solid 1px #dcdcdc;
+    } */
+
+        .flip-book {
+            box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);
+            margin: 0 auto;
+            display: none;
+        }
+
+        .page {
+            padding: 20px;
+            background-color: #fdfaf7;
+            color: #785e3a;
+            border: solid 1px #c2b5a3;
+            overflow: hidden;
+        }
+
+        .page .page-content {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: stretch;
+        }
+
+        .page .page-content .page-header {
+            height: 30px;
+            font-size: 100%;
+            text-transform: uppercase;
+            text-align: center;
+        }
+
+        .page .page-content .page-image {
+            height: 100%;
+            background-size: contain;
+            background-position: center center;
+            background-repeat: no-repeat;
+        }
+
+        .page .page-content .page-text {
+            height: 100%;
+            flex-grow: 1;
+            font-size: 80%;
+            text-align: justify;
+            margin-top: 10px;
+            padding-top: 10px;
+            box-sizing: border-box;
+            border-top: solid 1px #f4e8d7;
+        }
+
+        .page .page-content .page-footer {
+            height: 30px;
+            border-top: solid 1px #f4e8d7;
+            font-size: 80%;
+            color: #998466;
+        }
+
+        .page.--left {
+            border-right: 0;
+            box-shadow: inset -7px 0 30px -7px rgba(0, 0, 0, 0.4);
+        }
+
+        .page.--right {
+            border-left: 0;
+            box-shadow: inset 7px 0 30px -7px rgba(0, 0, 0, 0.4);
+        }
+
+        .page.--right .page-footer {
+            text-align: right;
+        }
+
+        /*! CSS Used from: Embedded */
+        .stf__wrapper {
+            position: relative;
+            display: block;
+            box-sizing: border-box;
+            transform: translateZ(0);
+        }
+
+        .stf__wrapper canvas {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+        }
+
+        .stf__block {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            box-sizing: border-box;
+        }
+
+        .stf__item {
+            display: none;
+            position: absolute;
+        }
+
+        form {
+            width: 450px;
+            height: 50px;
+            position: relative;
+        }
+
+        form input {
+            width: 100%;
+            height: 100%;
+            padding: 0 50px 0 20px;
+            border: 1px solid #707070;
+            outline: none;
+            box-sizing: border-box;
+            font-size: 16px;
+            background-color: transparent;
+        }
+
+        a.search-button {
+            width: 50px;
+            height: 50px;
+            display: block;
+            position: absolute;
+            top: 0;
+            right: 0;
+            overflow: hidden;
+            text-decoration: none;
+        }
+
+        a.search-button .icon {
+            width: 12px;
+            height: 12px;
+            position: absolute;
+            top: 14px;
+            left: 14px;
+            background-color: #eff4f6;
+            border-radius: 8px;
+            border: 2px solid #000000;
+            transition: all 0.6s ease;
+        }
+
+        a.search-button .icon:after {
+            width: 12px;
+            height: 2px;
+            display: block;
+            content: "";
+            position: absolute;
+            bottom: -5px;
+            right: -8px;
+            background-color: #000000;
+            transform: rotate(45deg);
+            transition: all 0.6s ease;
+        }
+
+        a.search-button .icon .clear {
+            width: 100%;
+            height: 100%;
+            line-height: 12px;
+            display: block;
+            text-align: center;
+            color: #ffffff;
+            font-size: 0;
+            transition: all 0.6s ease;
+        }
+
+        a.search-button.typed .icon {
+            width: 60px;
+            height: 60px;
+            border-radius: 50px;
+            border-width: 6px;
+            top: -11px;
+            left: -11px;
+        }
+
+        a.search-button.typed .icon:after {
+            width: 52px;
+            height: 8px;
+            bottom: -20px;
+            right: -30px;
+        }
+
+        a.search-button.typed .icon .clear {
+            line-height: 58px;
+            font-size: 22px;
+        }
+    </style>
+
+
+
+    <section class="shop1">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <div class="shop7">
+                        <form>
+                            <input type="text" placeholder="Search" />
+                            <a href="javascript:void(0);" class="search-button">
+                                <div class="icon">
+                                    <span class="clear">x</span>
+                                </div>
+                            </a>
+                        </form>
+                        <div class="shop5">
+                            <div class="shop6">
+                                <a href="#">SORT BY</a>
+                            </div>
+                            <div class="shop8">
+                                <select name="pets" id="pet-select" class="form-select" aria-label="Default select example">
+                                    <option value="">POPOULARITY</option>
+                                    <option value="1">Dog</option>
+                                    <option value="2">Cat</option>
+                                    <option value="3">Hamster</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="demo-block  pt-3 pb-3 overflow-hidden">
+            <div class="container mb-3 text-center" id="buttonDemoSelection">
+
+            </div>
+
+            <div class="container">
+                <div id="htmlBook">
+                    <div class="flip-book html-book stf__wrapper --landscape" id="htmlBookExample" style="min-width: 350px; min-height: 467px; width: 100%; max-width: 1400px; display: block; padding-bottom: 66.6364%;">
+                        <div class="stf__block">
+                            <div class="page stf__item --left --simple" style="display: none;">
+                                <div class="page-content">
+                                    <h2 class="page-header">Page header - 1</h2>
+                                    <div class="page-image">
+                                        <video width="100%" controls="" preload="" muted="" autoplay="" loop="">
+                                            <source src="video/book1.mp4">
+                                        </video>
+                                    </div>
+                                    <div class="page-text">
+                                        <h2>VIDEO PRODUCT 1</h2>
+                                        <p class="shop3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam Ut enim ad minim veniam</p>
+                                        <div class="shop2">
+                                            <div class="line3"></div>
+                                            <p>20.00$</p>
+                                        </div>
+                                        <div class="shop4">
+                                            <ul>
+                                                <li><a href="#">Buy 1 month</a></li>
+                                                <li><a href="#">Buy 3 month</a></li>
+                                                <li><a href="#">Buy 6 month</a></li>
+                                                <li><a href="#">Buy 12 month</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="page-footer">1</div>
+                                </div>
+                            </div>
+
+                            <div class="page stf__item --right --simple" style="display: none;">
+                                <div class="page-content">
+                                    <h2 class="page-header">Page header - 2</h2>
+                                    <div class="page-image">
+                                        <video width="100%" controls="" preload="" muted="" autoplay="" loop="">
+                                            <source src="video/book2.mp4">
+                                        </video>
+                                    </div>
+                                    <div class="page-text">
+                                        <h2>VIDEO PRODUCT 2</h2>
+                                        <p class="shop3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam Ut enim ad minim veniam</p>
+                                        <div class="shop2">
+                                            <div class="line3"></div>
+                                            <p>20.00$</p>
+                                        </div>
+                                        <div class="shop4">
+                                            <ul>
+                                                <li><a href="#">Buy 1 month</a></li>
+                                                <li><a href="#">Buy 3 month</a></li>
+                                                <li><a href="#">Buy 6 month</a></li>
+                                                <li><a href="#">Buy 12 month</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="page-footer">2</div>
+                                </div>
+                            </div>
+
+                            <div class="page stf__item --left" style="display: none; position: absolute; left: 0px; top: 0px; box-sizing: border-box; z-index: 1; transform-origin: 0px 0px; width: 555px; height: 739.664px; clip-path: polygon(0px 0px, 33px -2.02067e-15px, 2.02067e-15px 33px);">
+                                <div class="page-content">
+                                    <h2 class="page-header">Page header - 3</h2>
+                                    <div class="page-image">
+                                        <video width="100%" controls="" preload="" muted="" autoplay="" loop="">
+                                            <source src="video/book3.mp4">
+                                        </video>
+                                    </div>
+                                    <div class="page-text">
+                                        <h2>VIDEO PRODUCT 3</h2>
+                                        <p class="shop3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam Ut enim ad minim veniam</p>
+                                        <div class="shop2">
+                                            <div class="line3"></div>
+                                            <p>20.00$</p>
+                                        </div>
+                                        <div class="shop4">
+                                            <ul>
+                                                <li><a href="#">Buy 1 month</a></li>
+                                                <li><a href="#">Buy 3 month</a></li>
+                                                <li><a href="#">Buy 6 month</a></li>
+                                                <li><a href="#">Buy 12 month</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="page-footer">3</div>
+                                </div>
+                            </div>
+
+                            <div class="page stf__item --right" style="display: none; position: absolute; left: 0px; top: 0px; box-sizing: border-box; z-index: 1; transform-origin: 0px 0px; width: 555px; height: 739.664px; clip-path: polygon(522px 0px, 555px 0px, 555px 33px, 522px 0px);">
+                                <div class="page-content">
+                                    <h2 class="page-header">Page header - 4</h2>
+                                    <div class="page-image">
+                                        <video width="100%" controls="" preload="" muted="" autoplay="" loop="">
+                                            <source src="video/book4.mp4">
+                                        </video>
+                                    </div>
+                                    <div class="page-text">
+                                        <h2>VIDEO PRODUCT 4</h2>
+                                        <p class="shop3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam Ut enim ad minim veniam</p>
+                                        <div class="shop2">
+                                            <div class="line3"></div>
+                                            <p>20.00$</p>
+                                        </div>
+                                        <div class="shop4">
+                                            <ul>
+                                                <li><a href="#">Buy 1 month</a></li>
+                                                <li><a href="#">Buy 3 month</a></li>
+                                                <li><a href="#">Buy 6 month</a></li>
+                                                <li><a href="#">Buy 12 month</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="page-footer">4</div>
+                                </div>
+                            </div>
+
+                            <div class="page stf__item" style="position: absolute; left: 0px; top: 0px; box-sizing: border-box; display: none; z-index: 1;">
+                                <div class="page-content">
+                                    <h2 class="page-header">Page header - 5</h2>
+                                    <div class="page-image">
+                                        <video width="100%" controls="" preload="" muted="" autoplay="" loop="">
+                                            <source src="video/book5.mp4">
+                                        </video>
+                                    </div>
+                                    <div class="page-text">
+                                        <h2>VIDEO PRODUCT 5</h2>
+                                        <p class="shop3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam Ut enim ad minim veniam</p>
+                                        <div class="shop2">
+                                            <div class="line3"></div>
+                                            <p>20.00$</p>
+                                        </div>
+                                        <div class="shop4">
+                                            <ul>
+                                                <li><a href="#">Buy 1 month</a></li>
+                                                <li><a href="#">Buy 3 month</a></li>
+                                                <li><a href="#">Buy 6 month</a></li>
+                                                <li><a href="#">Buy 12 month</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="page-footer">5</div>
+                                </div>
+                            </div>
+
+                            <div class="page stf__item" style="position: absolute; left: 0px; top: 0px; box-sizing: border-box; display: none; z-index: 1;">
+                                <div class="page-content">
+                                    <h2 class="page-header">Page header - 6</h2>
+                                    <div class="page-image">
+                                        <video width="100%" controls="" preload="" muted="" autoplay="" loop="">
+                                            <source src="video/book1.mp4">
+                                        </video>
+                                    </div>
+                                    <div class="page-text">
+                                        <h2>VIDEO PRODUCT 6</h2>
+                                        <p class="shop3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam Ut enim ad minim veniam</p>
+                                        <div class="shop2">
+                                            <div class="line3"></div>
+                                            <p>20.00$</p>
+                                        </div>
+                                        <div class="shop4">
+                                            <ul>
+                                                <li><a href="#">Buy 1 month</a></li>
+                                                <li><a href="#">Buy 3 month</a></li>
+                                                <li><a href="#">Buy 6 month</a></li>
+                                                <li><a href="#">Buy 12 month</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="page-footer">6</div>
+                                </div>
+                            </div>
+
+                            <div class="page stf__item" style="position: absolute; left: 0px; top: 0px; box-sizing: border-box; display: none; z-index: 1;">
+                                <div class="page-content">
+                                    <h2 class="page-header">Page header - 7</h2>
+                                    <div class="page-image">
+                                        <video width="100%" controls="" preload="" muted="" autoplay="" loop="">
+                                            <source src="video/book2.mp4">
+                                        </video>
+                                    </div>
+                                    <div class="page-text">
+                                        <h2>VIDEO PRODUCT 7</h2>
+                                        <p class="shop3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam Ut enim ad minim veniam</p>
+                                        <div class="shop2">
+                                            <div class="line3"></div>
+                                            <p>20.00$</p>
+                                        </div>
+                                        <div class="shop4">
+                                            <ul>
+                                                <li><a href="#">Buy 1 month</a></li>
+                                                <li><a href="#">Buy 3 month</a></li>
+                                                <li><a href="#">Buy 6 month</a></li>
+                                                <li><a href="#">Buy 12 month</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="page-footer">7</div>
+                                </div>
+                            </div>
+
+                            <div class="page stf__item" style="position: absolute; left: 0px; top: 0px; box-sizing: border-box; display: none; z-index: 1;">
+                                <div class="page-content">
+                                    <h2 class="page-header">Page header - 8</h2>
+                                    <div class="page-image">
+                                        <video width="100%" controls="" preload="" muted="" autoplay="" loop="">
+                                            <source src="video/book3.mp4">
+                                        </video>
+                                    </div>
+                                    <div class="page-text">
+                                        <h2>VIDEO PRODUCT 8</h2>
+                                        <p class="shop3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam Ut enim ad minim veniam</p>
+                                        <div class="shop2">
+                                            <div class="line3"></div>
+                                            <p>20.00$</p>
+                                        </div>
+                                        <div class="shop4">
+                                            <ul>
+                                                <li><a href="#">Buy 1 month</a></li>
+                                                <li><a href="#">Buy 3 month</a></li>
+                                                <li><a href="#">Buy 6 month</a></li>
+                                                <li><a href="#">Buy 12 month</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="page-footer">8</div>
+                                </div>
+                            </div>
+
+                            <div class="page stf__item --left" style="position: absolute; display: none; height: 739.664px; left: 0px; top: 0px; width: 555px; z-index: 1; box-sizing: border-box;">
+                                <div class="page-content">
+                                    <h2 class="page-header">Page header - 9</h2>
+                                    <div class="page-image">
+                                        <video width="100%" controls="" preload="" muted="" autoplay="" loop="">
+                                            <source src="video/book4.mp4">
+                                        </video>
+                                    </div>
+                                    <div class="page-text">
+                                        <h2>VIDEO PRODUCT 9</h2>
+                                        <p class="shop3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam Ut enim ad minim veniam</p>
+                                        <div class="shop2">
+                                            <div class="line3"></div>
+                                            <p>20.00$</p>
+                                        </div>
+                                        <div class="shop4">
+                                            <ul>
+                                                <li><a href="#">Buy 1 month</a></li>
+                                                <li><a href="#">Buy 3 month</a></li>
+                                                <li><a href="#">Buy 6 month</a></li>
+                                                <li><a href="#">Buy 12 month</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="page-footer">9</div>
+                                </div>
+                            </div>
+
+                            <div class="page stf__item --left" style="position: absolute; display: block; height: 739.664px; left: 0px; top: 0.168182px; width: 555px; z-index: 1;">
+                                <div class="page-content">
+                                    <h2 class="page-header">Page header - 10</h2>
+                                    <div class="page-image">
+                                        <video width="100%" controls="" preload="" muted="" autoplay="" loop="">
+                                            <source src="video/book5.mp4">
+                                        </video>
+                                    </div>
+                                    <div class="page-text">
+                                        <h2>VIDEO PRODUCT 10</h2>
+                                        <p class="shop3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam Ut enim ad minim veniam</p>
+                                        <div class="shop2">
+                                            <div class="line3"></div>
+                                            <p>20.00$</p>
+                                        </div>
+                                        <div class="shop4">
+                                            <ul>
+                                                <li><a href="#">Buy 1 month</a></li>
+                                                <li><a href="#">Buy 3 month</a></li>
+                                                <li><a href="#">Buy 6 month</a></li>
+                                                <li><a href="#">Buy 12 month</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="page-footer">10</div>
+                                </div>
+                            </div>
+
+                            <div class="page stf__item --right" style="position: absolute; display: block; height: 739.664px; left: 555px; top: 0.168182px; width: 555px; z-index: 1;">
+                                <div class="page-content">
+                                    <h2 class="page-header">Page header - 2</h2>
+                                    <div class="page-image" style="background-image: url(https://cdn.pixabay.com/photo/2016/01/08/17/06/poppy-1128683__340.jpg)"></div>
+                                    <div class="page-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In cursus mollis nibh, non convallis ex convallis eu. Suspendisse potenti. Aenean vitae pellentesque erat. Integer non tristique quam. Suspendisse rutrum, augue ac sollicitudin mollis, eros velit viverra metus, a venenatis tellus tellus id magna. Aliquam ac nulla rhoncus, accumsan eros sed, viverra enim. Pellentesque non justo vel nibh sollicitudin pharetra suscipit ut ipsum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In cursus mollis nibh, non convallis ex convallis eu. Suspendisse potenti. Aenean vitae pellentesque erat. Integer non tristique quam. Suspendisse rutrum, augue ac sollicitudin mollis, eros velit viverra metus, a venenatis tellus tellus id magna.</div>
+                                    <div class="page-footer">2</div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="stf__block">
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <div id="canvasBook" style="display: none">
+                    <div class="flip-book canvas-book stf__wrapper --portrait" id="canvasBookExample" style="min-width: 350px; min-height: 467px; width: 100%; max-width: 1400px; display: block; padding-bottom: 133.273%;"><canvas class="stf__canvas" width="100" height="100"></canvas></div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="text-center mt-5 mb-2">
+                    <button type="button" class="btn btn-info btn-sm btn-book-prev">Previous page</button>
+                    [<span class="page-count">1</span> of <span class="page-total">9</span>]
+                    <button type="button" class="btn btn-info btn-sm btn-book-next">Next page</button>
+                </div>
+                <br><br>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <div>
+        <a id="button12" class="my-button"></a>
+    </div>
+
+
+
+    <section class="footer">
+        <div class="container">
+            <div class="row footer7">
+                <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                    <div class="">
+                        <a href="index.html"> <img src="images/logo.png" class="img-fluid" alt="img"> </a>
+
+                        <ul class="footer1">
+                            <li>
+                                <a href="about.html">About Us</a>
+                            </li>
+                            <li>
+                                <a href="contact.html">Contact Support</a>
+                            </li>
+                            <li>
+                                <a href="blog.html">Blogs</a>
+                            </li>
+                        </ul>
+
+                        <!-- Social Box -->
+                        <ul class="social-box">
+                            <li>
+                                <a href="#" target="_blank"><img src="images/instagram.png" class="img-fluid"
+                                        alt="img"></a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank"><img src="images/facebook.png" class="img-fluid"
+                                        alt="img"></a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank"><img src="images/twitter.png" class="img-fluid"
+                                        alt="img"></a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank"><img src="images/linkdin.png" class="img-fluid"
+                                        alt="img"></a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank"><img src="images/youtube.png" class="img-fluid"
+                                        alt="img"></a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+
+
+                </div>
+
+                <div class="col-12 col-sm-12 col-md-5 col-lg-5 col-xl-5 col-xxl-5">
+                    <div class="footer3">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua.</p>
+
+                        <form class="footer4">
+                            <input class="form-control me-2" type="search" placeholder="Your Email" aria-label="Search">
+                            <button class="btn footer5" type="submit">Submit</button>
+                        </form>
+
+                        <ul class="footer6">
+                            <li><a href="right.html">Copyright</a></li>
+                            <li><a href="policy.html">Privacy Policy</a></li>
+                            <li><a href="term.html">Terms & Conditions</a></li>
+                        </ul>
+
+                        <div class="copyright">
+                            Copyright © 2023 Eugena, Inc. All rights reserved.
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- <script src="js/bootstrap.min.js.map"></script> -->
+    <script src="js/slick.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/owl-custom.js"></script>
+    <script src="js/title.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/jquery.inputmask.bundle.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/book.js"></script>
+
+
+
+    <script>
+        document.getElementsByTagName("body")[0].style.overflowX = "hidden";
+    </script>
+
+
+    <!-- Custom drop down script -->
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const inputWrap = document.getElementById("inputWrap");
+            const option = document.getElementById("option");
+            const options = document.querySelectorAll(".option p");
+
+            inputWrap.addEventListener("click", showOption);
+            options.forEach(item => {
+                item.addEventListener('click', showVal);
+            })
+
+            function showOption() {
+                inputWrap.classList.toggle("border-bottom-n");
+                inputWrap.classList.toggle("active");
+                option.classList.toggle("d-none");
+            }
+
+            function showVal(e) {
+                let input = document.querySelector("input");
+                input.value = e.target.textContent
+            }
+
+            document.addEventListener("click", function(event) {
+                const clickedElement = event.target;
+                if (!inputWrap.contains(clickedElement)) {
+                    inputWrap.classList.remove("border-bottom-n");
+                    inputWrap.classList.remove("active");
+                    option.classList.add("d-none");
+                }
+            });
+        });
+    </script>
+
+
+    <script>
+        $(document).ready(function() {
+            $('#slider1').slick({
+                dots: false,
+                infinite: true,
+                speed: 300,
+                slidesToShow: 4,
+                slidesToScroll: 1,
+                responsive: [{
+                        breakpoint: 1024,
+                        settings: {
+                            slidesToShow: 4,
+                            slidesToScroll: 1,
+                            infinite: true,
+                            dots: true
+                        }
+                    },
+                    {
+                        breakpoint: 600,
+                        settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 1
+                        }
+                    },
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                    }
+                ]
+            });
+
+            $('#slider2').slick({
+                dots: false,
+                infinite: true,
+                speed: 300,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                responsive: [{
+                        breakpoint: 1024,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1,
+                            infinite: true,
+                            dots: true
+                        }
+                    },
+                    {
+                        breakpoint: 600,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                    },
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                    }
+                ]
+            });
+        });
+    </script>
+
+
+    <!-- click function -->
+
+    <script>
+        var myDIV1Elements = document.querySelectorAll(".myDIV1");
+        var isOpenStates = Array.from({
+            length: myDIV1Elements.length
+        }, () => false);
+
+        // Get all elements with the class "divclickopen"
+        var divClickOpenElements = document.querySelectorAll(".divclickopen");
+
+        // Loop through each element and add a click event listener
+        divClickOpenElements.forEach(function(element, index) {
+            element.addEventListener("click", function() {
+                var x = myDIV1Elements[index];
+
+                if (!isOpenStates[index]) {
+                    x.style.display = "block";
+                    isOpenStates[index] = true;
+                } else {
+                    x.style.display = "none";
+                    isOpenStates[index] = false;
+                }
+            });
+        });
+    </script>
+
+
+    <!-- scroll-top the page  -->
+
+    <script>
+        var btn = $('#button12');
+
+        $(window).scroll(function() {
+            if ($(window).scrollTop() > 300) {
+                btn.addClass('show');
+            } else {
+                btn.removeClass('show');
+            }
+        });
+
+        btn.on('click', function(e) {
+            e.preventDefault();
+            $('html, body').animate({
+                scrollTop: 0
+            }, '300');
+        });
+    </script>
+
+    <!-- Full page loader -->
+
+    <script>
+        const LOADER_DELAY = 3000; // 2 seconds
+
+        window.addEventListener("load", function() {
+            const loader = document.getElementById("loader");
+
+            setTimeout(function() {
+                loader.style.display = "none";
+            }, LOADER_DELAY);
+        });
+    </script>
+
+</body>
+
+</html>

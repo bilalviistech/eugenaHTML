@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Eugena | Sign In </title>
+    <meta charset="UTF-8">
+    <!-- <meta name="keywords" content="HTML, CSS, JavaScript"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/bootstrap.min.css.map" rel="stylesheet" type="text/css">
+    <link rel="icon" href="images/logo.png" type="image/png" sizes="114*114">
+    <link href="css/custom.css" rel="stylesheet" type="text/css">
+    <link href="css/animate.css" rel="stylesheet" type="text/css">
+    <!-- link owl carasoul  -->
+    <link href="css/owl.carousel.min.css" rel="stylesheet" type="text/css">
+    <link href="css/owl.theme.default.min.css" rel="stylesheet" type="text/css">
+    <!-- link slick carasoul  -->
+    <link href="css/slick.css" rel="stylesheet" type="text/css">
+    <link href="css/slick-theme.css" rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet" href="https://code.jquery.com/jquery-3.6.0.min.js">
+
+    <link href="https://site-assets.fontawesome.com/releases/v6.0.0/css/all.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
+    <script src="app.js"></script>
+</head>
+
+<body>
+    <div class="header">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="index.html"><img src="images/logo.png" width="80%" alt="img"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"><i class="fa-solid fa-bars"></i></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">ABOUT US</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="shop.html">SHOP</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="career.html">CAREERS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="artical.html">ARTICLES</a>
+                        </li>
+                    </ul>
+                    <span class="nav_flex ms-auto">
+                        <span class="nav_glass">
+                            <a href="register.html">GET STARTED &nbsp; <i
+                                    class="fa-regular fa-chevron-right fa-fade"></i></a>
+                        </span>
+                    </span>
+
+                </div>
+            </div>
+        </nav>
+    </div>
+
+
+    <section class="regis">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 col-xxl-4 ">
+
+                    <div class="regis1">
+                        <div class="regispic"></div>
+                        <h2>Sign In</h2>
+                        <form>
+                            <div class="mb-3 regis4">
+                                <label for="exampleInputEmail1" class="form-label">Username or email address *</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                            </div>
+                            <div class="mb-3 regis4">
+                                <label for="exampleInputPassword1" class="form-label">Password *</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1">
+                            </div>
+                            <div class="sign2">
+                                <div class="mb-3 form-check">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1">Remember me </label>
+                                </div>
+                                <div class="sign1">
+                                    <a href="forgot.html">Lost your password?</a>
+                                </div>
+                            </div>
+                            <div class="regis2">
+                                <a href="#">Log in</a>
+                            </div>
+                        </form>
+
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <div>
+        <a id="button12" class="my-button"></a>
+    </div>
+
+
+    <!-- Custom drop down script -->
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const inputWrap = document.getElementById("inputWrap");
+            const option = document.getElementById("option");
+            const options = document.querySelectorAll(".option p");
+
+            inputWrap.addEventListener("click", showOption);
+            options.forEach(item => {
+                item.addEventListener('click', showVal);
+            })
+
+            function showOption() {
+                inputWrap.classList.toggle("border-bottom-n");
+                inputWrap.classList.toggle("active");
+                option.classList.toggle("d-none");
+            }
+
+            function showVal(e) {
+                let input = document.querySelector("input");
+                input.value = e.target.textContent
+            }
+
+            document.addEventListener("click", function(event) {
+                const clickedElement = event.target;
+                if (!inputWrap.contains(clickedElement)) {
+                    inputWrap.classList.remove("border-bottom-n");
+                    inputWrap.classList.remove("active");
+                    option.classList.add("d-none");
+                }
+            });
+        });
+    </script>
